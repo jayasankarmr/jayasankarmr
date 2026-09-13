@@ -5,19 +5,31 @@ the root `README.md` on the profile page, so nothing here shows up publicly.
 
 ---
 
-## 1. Placeholders to fill in
+## 1. Live links in the README
 
-Search `README.md` for these and replace them:
+All placeholders are filled in. These are the external links the README depends on —
+if any of them move, they need updating here:
 
-| Placeholder | Where | What to put |
-| :--- | :--- | :--- |
-| `YOUR-LINKEDIN-HANDLE` | header badge | your LinkedIn vanity URL slug |
-| `YOUR-CREDLY-HANDLE` | header badge + Certifications (×3) | your Credly profile slug |
-| `ADD-YOUR-PAPER-LINK-HERE` | Featured Projects, warm-pool row | the research paper (DOI, arXiv, Drive, or a PDF committed to this repo) |
+| Link | Points to |
+| :--- | :--- |
+| LinkedIn badge | `linkedin.com/in/jayasankar-m-r-1483802a5` |
+| Credly badge (header) | `credly.com/users/jayasankar-m-r.eede608c` — public profile, all badges |
+| AWS CCP verify (×2, Certifications) | `credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b` — the specific credential |
+| Research paper | Google Drive — `Jayasankar_LatencyMitigation.pdf` |
 
-Also check: the **Graduating May 2027** badge and the **Chennai, India** badge in the header,
-and the `sihcivic` project description — that repo has no description on GitHub, so the line
-in the table is my best guess from the repo name and stack. Correct it if it's wrong.
+**Two things worth fixing when you get the chance:**
+
+1. **The paper is a Google Drive link.** It's publicly viewable today (verified), but Drive
+   sharing settings are easy to change by accident, and a recruiter who hits "Request access"
+   usually just leaves. Committing the PDF into this repo and linking that instead makes it
+   permanent. Same argument for `resume.pdf`.
+2. **LifeDrop has a live demo** (it's on the resume) but the README only links the repo. A
+   working demo link is worth more than a repo link to a non-technical recruiter — add it to
+   the LifeDrop card in Featured Projects.
+
+Content sourced from `JAYASANKAR_M_R_Cloud_Engineer_Resume.pdf` — if you update the resume
+(new cert, new role, new metric), the Experience, Certifications and Tech Stack sections
+here should be updated to match, or the two will drift apart.
 
 ---
 

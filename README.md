@@ -2,19 +2,19 @@
 
 # Jayasankar M R
 
-### Cloud &amp; Backend Engineer · Final-Year CSE Student
+### Cloud &amp; DevOps Engineer · Final-Year CSE Student
 
 **Making systems faster, cheaper, and more reliable.**
 
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/jayasankar-m-r-1483802a5"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:jayasankar.mr7@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://www.credly.com/users/YOUR-CREDLY-HANDLE"><img src="https://img.shields.io/badge/Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" /></a>
+<a href="https://www.credly.com/users/jayasankar-m-r.eede608c"><img src="https://img.shields.io/badge/Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" /></a>
 
 <br />
 
-![Open to opportunities](https://img.shields.io/badge/Open%20to-Cloud%20%2F%20Backend%20%2F%20SRE%20roles-2EA043?style=flat-square)
-![Graduating](https://img.shields.io/badge/Graduating-May%202027-0969DA?style=flat-square)
-![Location](https://img.shields.io/badge/Chennai,%20India-IST%20(UTC%2B5:30)-6E7681?style=flat-square)
+![Open to opportunities](https://img.shields.io/badge/Open%20to-Internship%20%7C%202027%20Full--time-2EA043?style=flat-square)
+![Location](https://img.shields.io/badge/Delhi--NCR,%20India-Open%20to%20relocate%20Pan--India-0969DA?style=flat-square)
+![Graduating](https://img.shields.io/badge/B.Tech%20CSE-Class%20of%202027-6E7681?style=flat-square)
 
 </div>
 
@@ -22,13 +22,27 @@
 
 ## About
 
-Final-year Computer Science student (**CGPA 9.35**) building toward a career in **cloud engineering and backend development**, with a focus on AWS, Python, and cost/latency-optimised systems.
+Final-year B.Tech Computer Science student at **SRM Institute of Science and Technology, Delhi-NCR** (**CGPA 9.35/10**) and an **AWS Certified Cloud Practitioner** who builds and automates cloud infrastructure.
 
-I like problems where the win is measurable — cutting a bill, shaving a p99, removing a moving part. My AWS warm-pool orchestrator came out of exactly that: **65.3% cheaper** than always-on infrastructure for the same workload.
+I like problems where the win is measurable. My research project automates EC2, Auto Scaling and CloudWatch in Python (Boto3) to cut infrastructure cost **65.3%** and time-to-scale from **~7 minutes to near-zero**.
 
-Outside of code I'm **Vice Chair at ACM SRMIST**, where I help run technical events and mentor juniors.
+I've also shipped to production outside coursework — six months owning DNS, secure routing, release and incident response for two live client platforms during an industry internship.
 
-**Currently:** working toward AWS Solutions Architect – Associate · learning Terraform and containers · looking for a 2027 new-grad role.
+**Currently:** working toward AWS Solutions Architect – Associate · deepening Terraform and Kubernetes · open to internships and 2027 new-grad roles.
+
+---
+
+## Experience
+
+**Systems and Integrations Developer Intern → Trainee** · *GeToday Global Limited, London (Remote)* · `Jun 2025 – Dec 2025`
+
+- Owned the provisioning and production release lifecycle for **two live client platforms** end to end — DNS records, secure routing, SSL/TLS and environment configuration — taking each to live traffic.
+- Ran post-release operations with minimal supervision: monitored platform health, triaged incidents, traced faults to root cause and verified fixes on **revenue-generating systems**.
+- Built REST API integrations feeding third-party catalogues into core infrastructure, automating revenue-split and payment-gateway workflows. **Promoted to Trainee within the term.**
+
+**AI-Powered Cloud Engineer Virtual Intern** · *AWS &amp; AICTE* · `2025`
+
+- Hands-on AWS labs in cloud architecture and infrastructure management, applying least-privilege IAM, monitoring and cost controls.
 
 ---
 
@@ -36,21 +50,21 @@ Outside of code I'm **Vice Chair at ACM SRMIST**, where I help run technical eve
 
 <table>
 <tr>
-<td align="center" width="150">
-<a href="https://www.credly.com/users/YOUR-CREDLY-HANDLE">
-<img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" width="100" alt="AWS Certified Cloud Practitioner" />
+<td align="center" width="130">
+<a href="https://www.credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b">
+<img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" width="95" alt="AWS Certified Cloud Practitioner" />
 </a>
 </td>
 <td>
 
-**AWS Certified Cloud Practitioner**
+**AWS Certified Cloud Practitioner** (CLF-C02)
 `EARNED` · Amazon Web Services
 
-[Verify on Credly →](https://www.credly.com/users/YOUR-CREDLY-HANDLE)
+[Verify on Credly →](https://www.credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b)
 
 </td>
-<td align="center" width="150">
-<img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" width="100" alt="AWS Solutions Architect Associate" />
+<td align="center" width="130">
+<img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" width="95" alt="AWS Solutions Architect Associate" />
 </td>
 <td>
 
@@ -61,58 +75,108 @@ Outside of code I'm **Vice Chair at ACM SRMIST**, where I help run technical eve
 </tr>
 </table>
 
+Also: **The Bits and Bytes of Computer Networking** — Google (Coursera) · [all badges on Credly →](https://www.credly.com/users/jayasankar-m-r.eede608c)
+
 ---
 
 ## Tech Stack
 
-**Cloud &amp; Infrastructure**
+**Cloud Platforms**
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
-![S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) ![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white) ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white) ![S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white) ![IAM](https://img.shields.io/badge/IAM-DD344C?style=flat-square&logo=amazoniam&logoColor=white) ![VPC](https://img.shields.io/badge/VPC-8C4FFF?style=flat-square&logo=amazonvpc&logoColor=white) ![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white) ![RDS](https://img.shields.io/badge/RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white) ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 
-**Languages**
+<sub>Auto Scaling · Elastic Load Balancing · Warm Pools · high availability · cost optimisation · backup &amp; DR</sub>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+**Infrastructure &amp; Automation**
 
-**Backend &amp; Data**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Boto3](https://img.shields.io/badge/Boto3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+**DevOps &amp; Containers**
 
-**Frontend &amp; Tooling**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+<sub>CI/CD pipelines · container deployment · Agile/Scrum · change &amp; release management</sub>
+
+**Observability &amp; Reliability**
+
+<sub>CloudWatch metrics, alarms &amp; dashboards · log analysis · uptime monitoring · incident triage · root-cause analysis</sub>
+
+**Networking &amp; Security**
+
+<sub>TCP/IP · DNS · HTTP/HTTPS · SSL/TLS · routing · load balancing · firewalls · IAM/RBAC · least privilege</sub>
+
+**Databases &amp; Languages**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 
 ---
 
 ## Featured Projects
 
-| Project | What it does | Stack |
-| :--- | :--- | :--- |
-| **AWS Warm-Pool Orchestration** <br /> [Read the paper →](ADD-YOUR-PAPER-LINK-HERE) | Pre-warmed instance pool that keeps cold starts off the critical path. **65.3% cost reduction** vs. always-on infrastructure at equivalent latency. | `AWS` `EC2` `Lambda` `Python` |
-| **[Downright](https://github.com/jayasankarmr/Downright)** | Chrome/Edge extension — copy any page as clean Markdown in one keystroke. Correct tables, code fences, and math. No tracking, no network, ever. | `JavaScript` `Chrome API` |
-| **[sihcivic](https://github.com/jayasankarmr/sihcivic)** | Civic issue reporting and tracking platform, built for Smart India Hackathon. | `Vue` `TypeScript` `Vite` `Tailwind` |
-| **[LifeDrop](https://github.com/jayasankarmr/LifeDrop)** | Blood bank management system connecting donors, hospitals, and admins — inventory, matching, and request workflows. | `Flask` `SQLAlchemy` `Tailwind` |
-| **[credit-risk-analyser](https://github.com/jayasankarmr/credit-risk-analyser)** | Credit default risk modelling — feature engineering, model comparison, and evaluation. | `Python` `scikit-learn` `Pandas` |
+<table>
+<tr><td width="50%" valign="top">
+
+### Hybrid Auto-Scaling on AWS
+**Research · submitted to CIS 2026 (Paper ID 383), under peer review**
+
+An O(1) finite-state-machine controller in Python orchestrating **EC2 Warm Pools** across a load-balanced cluster.
+
+- **65.3% lower** billing cost than always-on
+- Time-to-scale **~7 min → near-zero**, by decoupling provisioning from CloudWatch metric delay
+- Fleet stabilises within **120 s** under burst load
+- Full warm-up and teardown lifecycle automated
+
+`Python (Boto3)` `EC2` `Auto Scaling` `Warm Pools` `CloudWatch` `ALB` `Linux`
+
+[**Read the paper →**](https://drive.google.com/file/d/1-JGgOm4Fdx2ljIvT2ilccA8RK8eS5l9R/view?usp=sharing)
+
+</td><td width="50%" valign="top">
+
+### LifeDrop
+**Blood bank management system**
+
+A live multi-role application connecting donors, hospitals and admins.
+
+- Role-based access control across three user types
+- Inventory and **low-stock alerting** dashboard
+- Production hardening: rate limiting, CSRF protection, CSP
+- Deployed and operated on Linux
+
+`Python` `Flask` `SQLAlchemy` `SQLite` `REST` `Tailwind`
+
+[**Repository →**](https://github.com/jayasankarmr/LifeDrop)
+
+</td></tr>
+<tr><td width="50%" valign="top">
+
+### Downright
+**Chrome / Edge extension**
+
+Copy any page as clean Markdown in one keystroke — correct tables, code fences and math.
+
+- Handles the cases most converters break on
+- **No tracking, no network. Ever.** Everything runs locally.
+
+`JavaScript` `Chrome Extension API`
+
+[**Repository →**](https://github.com/jayasankarmr/Downright)
+
+</td><td width="50%" valign="top">
+
+### Credit Risk Analyser
+**Default-risk modelling**
+
+End-to-end credit default risk pipeline.
+
+- Feature engineering on borrower and loan attributes
+- Model comparison and evaluation
+
+`Python` `scikit-learn` `Pandas` `Jupyter`
+
+[**Repository →**](https://github.com/jayasankarmr/credit-risk-analyser)
+
+</td></tr>
+</table>
 
 ---
 
@@ -164,6 +228,14 @@ Outside of code I'm **Vice Chair at ACM SRMIST**, where I help run technical eve
 
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
+
+## Beyond Code
+
+**Vice Chairperson, ACM — SRM Student Chapter** · `Aug 2025 – Present`
+Led a cross-functional team through the full delivery lifecycle of *Visualize It*, a data competition for **40+ participants**.
+
+**Rajya Puraskar Awardee** · The Bharat Scouts and Guides
+State-level award for leadership and community service.
 
 ---
 
