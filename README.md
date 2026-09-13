@@ -28,7 +28,7 @@ I like problems where the win is measurable. My research project automates EC2, 
 
 I've also shipped to production outside coursework — six months owning DNS, secure routing, release and incident response for two live client platforms during an industry internship.
 
-**Currently:** working toward AWS Solutions Architect – Associate · deepening Terraform and Kubernetes · open to internships and 2027 new-grad roles.
+**Currently:** working toward AWS Solutions Architect – Associate · learning Terraform and Kubernetes · open to internships and 2027 new-grad roles.
 
 ---
 
@@ -89,11 +89,11 @@ Also: **The Bits and Bytes of Computer Networking** — Google (Coursera) · [al
 
 **Infrastructure &amp; Automation**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Boto3](https://img.shields.io/badge/Boto3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Boto3](https://img.shields.io/badge/Boto3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 **DevOps &amp; Containers**
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 <sub>CI/CD pipelines · container deployment · Agile/Scrum · change &amp; release management</sub>
 
@@ -108,6 +108,12 @@ Also: **The Bits and Bytes of Computer Networking** — Google (Coursera) · [al
 **Databases &amp; Languages**
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
+
+**Foundational — currently learning**
+
+![Terraform](https://img.shields.io/badge/Terraform-9E9E9E?style=flat-square&logo=terraform&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-9E9E9E?style=flat-square&logo=kubernetes&logoColor=white)
+
+<sub>Coursework and self-study, not yet production experience.</sub>
 
 ---
 
@@ -144,7 +150,7 @@ A live multi-role application connecting donors, hospitals and admins.
 
 `Python` `Flask` `SQLAlchemy` `SQLite` `REST` `Tailwind`
 
-[**Repository →**](https://github.com/jayasankarmr/LifeDrop)
+[**Live demo →**](https://lifedrop-demo.onrender.com/) · [Repository](https://github.com/jayasankarmr/LifeDrop)
 
 </td></tr>
 <tr><td width="50%" valign="top">
@@ -233,6 +239,9 @@ End-to-end credit default risk pipeline.
 
 **Vice Chairperson, ACM — SRM Student Chapter** · `Aug 2025 – Present`
 Led a cross-functional team through the full delivery lifecycle of *Visualize It*, a data competition for **40+ participants**.
+
+**[Photography Portfolio →](https://jayasankarmr.github.io/Photography-Portfolio/)**
+Where I go when I'm not in a terminal.
 
 **Rajya Puraskar Awardee** · The Bharat Scouts and Guides
 State-level award for leadership and community service.
