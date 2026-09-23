@@ -15,17 +15,11 @@ if any of them move, they need updating here:
 | LinkedIn badge | `linkedin.com/in/jayasankar-m-r-1483802a5` |
 | Credly badge (header) | `credly.com/users/jayasankar-m-r.eede608c` — public profile, all badges |
 | AWS CCP verify (×2, Certifications) | `credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b` — the specific credential |
-| Research paper | Google Drive — `Jayasankar_LatencyMitigation.pdf` |
+| warm-pool-governor | `github.com/jayasankarmr/warm-pool-governor` — featured project, diagram in `assets/` |
+| LifeDrop status badge | `img.shields.io/website?url=https://lifedrop-demo.onrender.com` — kept green by an external HTTP ping |
 
-**Two things worth fixing when you get the chance:**
-
-1. **The paper is a Google Drive link.** It's publicly viewable today (verified), but Drive
-   sharing settings are easy to change by accident, and a recruiter who hits "Request access"
-   usually just leaves. Committing the PDF into this repo and linking that instead makes it
-   permanent. Same argument for `resume.pdf`.
-2. **LifeDrop has a live demo** (it's on the resume) but the README only links the repo. A
-   working demo link is worth more than a repo link to a non-technical recruiter — add it to
-   the LifeDrop card in Featured Projects.
+If `resume.pdf` ever gets linked from here, commit it into the repo rather than linking
+Google Drive — Drive sharing settings are easy to change by accident.
 
 Content sourced from `JAYASANKAR_M_R_Cloud_Engineer_Resume.pdf` — if you update the resume
 (new cert, new role, new metric), the Experience, Certifications and Tech Stack sections
@@ -37,12 +31,12 @@ here should be updated to match, or the two will drift apart.
 
 **Settings → Actions → General → Workflow permissions → "Read and write permissions" → Save.**
 
-Both workflows push commits. With the default read-only token they fail with a 403.
+Both workflows push (snake to `output`, Credly to `main`). With the default read-only token they fail with a 403.
 This cannot be set from code — it has to be clicked once in the web UI.
 
 ---
 
-## 3. The two workflows
+## 3. The workflows
 
 ### `.github/workflows/snake.yml`
 
@@ -66,20 +60,23 @@ gh run watch
 To change the snake's colours, edit the `?palette=` query on the dark output, or pass
 `&color_snake=...&color_dots=...` — see https://github.com/Platane/snk.
 
-### `.github/workflows/activity.yml`
+### `.github/workflows/credly.yml`
 
-Rewrites the block between `<!--START_SECTION:activity-->` and `<!--END_SECTION:activity-->`
-in `README.md` with your 5 most recent public GitHub events. Daily cron + manual dispatch.
+Rebuilds the **Certifications** block (between `<!--START_SECTION:credly-->` and
+`<!--END_SECTION:credly-->`) from the public Credly profile's `badges.json`.
 
-This one **does** commit to `main`, as `github-actions[bot]`. `COMMIT_MSG` is set to a plain
-`Update recent activity` to match this repo's commit-message convention.
+- Runs Mondays 02:00 UTC and on manual dispatch: `gh workflow run credly.yml`.
+- Logic lives in `.github/scripts/credly.py` (stdlib only). Badges with `type_category ==
+  "Certification"` become the big cards; everything else goes in the small training-badge row.
+- **Commits only when the output changes**, as `github-actions[bot]`, with message
+  `Update Credly badges`. Most weeks it does nothing, so `main`'s history stays hand-written.
+- `IN_PROGRESS` at the top of the script holds the SAA card. It disappears on its own once a
+  Credly badge with that name shows up — no README edit needed when you pass.
+- Don't hand-edit inside the markers; the next run overwrites it. Run the script locally to
+  preview: `python3 .github/scripts/credly.py`.
 
-Note: it only ever sees **public** events. If most of your work is in private repos this
-section will look sparse — that's a signal to make more work public, not a bug.
-
-Change `MAX_LINES: 5` to show more or fewer entries.
-
-To remove it entirely: delete the workflow file and the `## Recent Activity` section.
+The old "Recent Activity" workflow was removed on purpose: it committed to `main` most days
+and duplicated the activity feed GitHub already shows under the README.
 
 ---
 
@@ -186,3 +183,13 @@ Worth knowing before trying to make something look fancier:
   `<details><summary>`, `<br />`, `<a>`, `<h1>`–`<h6>`.
 - Markdown syntax is **not** parsed inside an HTML block unless there's a blank line separating
   it — that's why the Certifications table has blank lines inside its `<td>` cells.
+
+---
+
+## 8. Local assets
+
+- `assets/warm-pool-governor-{light,dark}.svg` — the Featured Projects diagram, swapped by
+  `<picture>`. Thresholds (20% / 40%) and pool sizes match `governor/config.py` defaults in the
+  project repo; if those change, the diagram should too.
+- `assets/photos/*.jpg` — 600×600 square crops from the Photography Portfolio, ~100 KB each.
+  Swap freely; keep them square and the same size so the strip lines up.
