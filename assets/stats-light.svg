@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 96" width="1660" height="192" role="img" aria-label="63.8% projected cost saving vs always-on · 2m43s sooner than a CPU alarm · O(1) pure decision no forecast · 604 tests run fully offline">
+<title>63.8% projected cost saving vs always-on · 2m43s sooner than a CPU alarm · O(1) pure decision no forecast · 604 tests run fully offline</title>
+<rect x="0.5" y="0.5" width="829" height="95" fill="#FAF6EE" stroke="#D6CCBB"/>
+<text x="20" y="46" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="34" font-weight="700" letter-spacing="-0.68" fill="#A15606">63.8%</text>
+<text x="20" y="68" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#1C1712">projected cost saving</text>
+<text x="20" y="84" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="11.5" fill="#6A6053">vs always-on</text>
+<line x1="207.5" y1="1" x2="207.5" y2="95" stroke="#D6CCBB" stroke-width="1"/>
+<text x="227.5" y="46" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="34" font-weight="700" letter-spacing="-0.68" fill="#1C1712">2m43s</text>
+<text x="227.5" y="68" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#1C1712">sooner than</text>
+<text x="227.5" y="84" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="11.5" fill="#6A6053">a CPU alarm</text>
+<line x1="415" y1="1" x2="415" y2="95" stroke="#D6CCBB" stroke-width="1"/>
+<text x="435" y="46" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="34" font-weight="700" letter-spacing="-0.68" fill="#1C1712">O(1)</text>
+<text x="435" y="68" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#1C1712">pure decision</text>
+<text x="435" y="84" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="11.5" fill="#6A6053">no forecast</text>
+<line x1="622.5" y1="1" x2="622.5" y2="95" stroke="#D6CCBB" stroke-width="1"/>
+<text x="642.5" y="46" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="34" font-weight="700" letter-spacing="-0.68" fill="#1C1712">604</text>
+<text x="642.5" y="68" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#1C1712">tests</text>
+<text x="642.5" y="84" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="11.5" fill="#6A6053">run fully offline</text>
+</svg>
