@@ -1,0 +1,49 @@
+name: Build profile assets
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/**
+      - assets/src/**
+      - assets/photos/**
+      - .github/workflows/assets.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: assets
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Standard library only. Photos are already resized in assets/src/, so no image
+      # library is needed here.
+      - name: Rebuild themed SVGs
+        run: python scripts/build_assets.py
+
+      # Commits only when the generated SVGs differ from what was pushed. A push made
+      # with GITHUB_TOKEN does not trigger workflows, so this cannot loop.
+      - name: Commit if changed
+        run: |
+          git add assets/
+          if git diff --cached --quiet; then
+            echo "Assets already up to date."
+            exit 0
+          fi
+          git config user.name "Jayasankar M R"
+          git config user.email "jayasankar.mr7@gmail.com"
+          git commit -m "Rebuild profile assets"
+          git push
