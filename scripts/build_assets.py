@@ -11,12 +11,14 @@ import subprocess
 import sys
 from pathlib import Path
 
-from svg_kit import (arrow_marker, brackets, circle, header, line, path, rect, svg, text,
-                     text_width, tspan)
-from tokens import THEMES, check_contrast
+from svg_kit import (arrow_marker, brackets, circle, header, image, line, linear_gradient,
+                     path, rect, svg, text, text_width, tspan, wrap)
+from tokens import DARK, THEMES, check_contrast
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
+SRC = ASSETS / "src"        # photo derivatives written by prepare_photos.py
+PHOTOS = ASSETS / "photos"
 MAX_BYTES = 200 * 1024
 
 HEADERS = [
@@ -47,6 +49,40 @@ STATS = [
     ("2m43s", "sooner than", "a CPU alarm"),
     ("O(1)", "pure decision", "no forecast"),
     ("604", "tests", "run fully offline"),
+]
+
+HERO = {
+    "rec": "jayasankarmr / profile",
+    "name": ("Jayasankar", "M R"),
+    "role": "Cloud & DevOps Engineer · Final-Year CSE Student",
+    "tagline": "Making systems faster, cheaper, and more reliable.",
+}
+
+# About readout: the same cell strip as the flagship stats, facts from the About text.
+ABOUT = [
+    ("9.35", "CGPA out of 10", "SRM IST, Delhi-NCR"),
+    ("6mo", "production ops", "industry internship"),
+    ("2", "live client platforms", "DNS · routing · release"),
+    ("CCP", "AWS Certified", "Cloud Practitioner"),
+]
+
+# Photography frames in Beyond code: (file in assets/photos, caption).
+FRAMES = [("tower", "TOWER"), ("peacock", "PEACOCK"), ("cupola", "CUPOLA")]
+
+# (slug, name, subtitle, description, tags)
+PROJECTS = [
+    ("lifedrop", "LifeDrop", "Blood bank management system",
+     "Multi-role app connecting donors, hospitals and admins. Low-stock alerts, rate "
+     "limiting, CSRF protection, CSP.",
+     ["Flask", "SQLAlchemy", "SQLite", "Tailwind"]),
+    ("downright", "Downright", "Chrome / Edge extension",
+     "Copy any page as clean Markdown in one keystroke, with correct tables, code fences "
+     "and math. No tracking, no network.",
+     ["JavaScript", "Chrome Extension API"]),
+    ("credit-risk", "Credit Risk Analyser", "Default-risk modelling",
+     "End-to-end credit default risk pipeline: feature engineering on borrower and loan "
+     "attributes, model comparison and evaluation.",
+     ["scikit-learn", "Pandas", "Jupyter"]),
 ]
 
 
@@ -103,10 +139,11 @@ def build_status(t, w=830, h=44):
 
 # ── flagship stat strip ─────────────────────────────────────────────────────────
 
-def build_stats(t, w=830, h=96):
-    cell = w / len(STATS)
+def stat_strip(cells, t, w=830, h=96):
+    """Four readout cells: big mono number (amber in the first), label, muted sub-label."""
+    cell = w / len(cells)
     body = [rect(0.5, 0.5, w - 1, h - 1, fill=t["panel"], stroke=t["line"])]
-    for i, (num, label, sub) in enumerate(STATS):
+    for i, (num, label, sub) in enumerate(cells):
         x = i * cell
         if i:
             body.append(line(x, 1, x, h - 1, stroke=t["line"]))
@@ -116,8 +153,15 @@ def build_stats(t, w=830, h=96):
             text(x + 20, 68, label, size=13, fill=t["text"], weight=500),
             text(x + 20, 84, sub, size=11.5, fill=t["muted"]),
         ]
-    label = " · ".join(f"{n} {a} {b}" for n, a, b in STATS)
-    return {"stats": svg(w, h, body, label)}
+    return svg(w, h, body, " · ".join(f"{n} {a} {b}" for n, a, b in cells))
+
+
+def build_stats(t):
+    return {"stats": stat_strip(STATS, t)}
+
+
+def build_about(t):
+    return {"about": stat_strip(ABOUT, t)}
 
 
 # ── warm-pool-governor control loop ─────────────────────────────────────────────
@@ -233,7 +277,105 @@ def build_governor(t, w=830, h=250):
     return {"governor": svg(w, h, body, label, defs)}
 
 
-BUILDERS = [build_headers, build_links, build_status, build_stats, build_governor]
+# ── hero banner ─────────────────────────────────────────────────────────────────
+
+def build_hero(t, w=830, h=400):
+    inset, x0 = 14, 48
+    photo_x = w * 0.36                  # photo fills the right 64%
+    photo_w = w - photo_x
+    # Background colour fades the photo out over its left 60%. The curve stays nearly
+    # solid early so the role and tagline, which run over the photo edge, keep contrast.
+    fade = [(o / 10 * 0.6, t["bg"], round(1 - (o / 10) ** 2, 3)) for o in range(11)]
+    defs = (linear_gradient("fade", fade)
+            + f'<clipPath id="onphoto"><rect x="{w * 0.7}" y="0" width="{w * 0.3}" height="{h}"/></clipPath>')
+    # The photo is dark in both themes, so marks drawn over it use the bright amber.
+    on_photo = DARK["amber"]
+
+    af = 44                             # AF bracket over the photo at 70% x, 50% y
+    afx, afy = w * 0.70 - af / 2, h / 2 - af / 2
+    ccx, ccy = w * 0.70, h / 2
+
+    body = [
+        rect(0, 0, w, h, fill=t["bg"]),
+        image(photo_x, 0, photo_w, h, SRC / "hero.jpg"),
+        rect(photo_x, 0, photo_w, h, fill="#000", opacity=0.2),   # brightness 0.8
+        rect(photo_x - 1, 0, photo_w + 1, h, fill="url(#fade)"),
+        brackets(inset, inset, w - 2 * inset, h - 2 * inset, 14, stroke=t["amber"]),
+        '<g clip-path="url(#onphoto)">',
+        brackets(inset, inset, w - 2 * inset, h - 2 * inset, 14, stroke=on_photo),
+        "</g>",
+        brackets(afx, afy, af, af, 10, stroke=on_photo, sw=1.5),
+        line(ccx - 5, ccy, ccx + 5, ccy, stroke=on_photo, sw=1.25),
+        line(ccx, ccy - 5, ccx, ccy + 5, stroke=on_photo, sw=1.25),
+
+        circle(x0 + 4, 52 - 4, 4, fill=t["red"]),
+        text(x0 + 14, 52, "REC", size=12, fill=t["red"], family="mono", weight=700, ls=0.14),
+        text(x0 + 14 + text_width("REC", 12, "mono", ls=0.14 * 12) + 12, 52, HERO["rec"],
+             size=12, fill=t["muted"], family="mono", ls=0.14),
+
+        text(x0 - 2, 172, HERO["name"][0], size=44, fill=t["text"], weight=700, ls=-0.03),
+        text(x0 - 2, 220, HERO["name"][1], size=44, fill=t["text"], weight=700, ls=-0.03),
+        text(x0, 266, HERO["role"], size=14, fill=t["amber"], family="mono", weight=600),
+        text(x0, 298, HERO["tagline"], size=16, fill=t["text"], weight=600),
+    ]
+    label = (f"{' '.join(HERO['name'])}. {HERO['role']}. {HERO['tagline']}")
+    return {"hero": svg(w, h, body, label, defs)}
+
+
+# ── Beyond code: photo frames ───────────────────────────────────────────────────
+
+def build_frames(t, w=268, h=335, inset=8):
+    out = {}
+    for i, (slug, caption) in enumerate(FRAMES, 1):
+        chip = f"{i:02d} · {caption}"
+        cw = text_width(chip, 11, "mono", ls=0.14 * 11) + 16
+        body = [
+            image(inset, inset, w - 2 * inset, h - 2 * inset, PHOTOS / f"{slug}.jpg"),
+            brackets(0, 0, w, h, 16, stroke=t["amber"]),
+            rect(inset + 8, h - inset - 30, cw, 22, fill=t["bg"]),
+            text(inset + 16, h - inset - 15, chip, size=11, fill=t["text"], family="mono",
+                 ls=0.14),
+        ]
+        out[f"frame-{slug}"] = svg(w, h, body, f"Photograph {chip}")
+    return out
+
+
+# ── More projects: cards ────────────────────────────────────────────────────────
+
+def build_projects(t, w=268, h=220, pad=18):
+    out = {}
+    inner = w - 2 * pad
+    for slug, name, sub, desc, tags in PROJECTS:
+        lines = wrap(desc, inner, 12.5)
+        tag_lines = [""]
+        for tag in tags:            # wrap between tags, never inside one
+            trial = f"{tag_lines[-1]} · {tag}" if tag_lines[-1] else tag
+            if text_width(trial, 11, "mono") > inner:
+                tag_lines.append(tag)
+            else:
+                tag_lines[-1] = trial
+        if len(lines) > 4 or len(tag_lines) > 2:
+            raise ValueError(f"{slug}: card text does not fit")
+        body = [
+            rect(0, 0, w, h, fill=t["panel"]),
+            brackets(0, 0, w, h, 14, stroke=t["amber"]),
+            text(pad, 38, name, size=16, fill=t["text"], family="mono", weight=700),
+            text(pad, 57, sub, size=12, fill=t["muted"]),
+        ]
+        body += [text(pad, 84 + 17 * k, ln, size=12.5, fill=t["text"])
+                 for k, ln in enumerate(lines)]
+        ty = h - 50 - 15 * (len(tag_lines) - 1)
+        body += [text(pad, ty + 15 * k, ln, size=11, fill=t["muted"], family="mono")
+                 for k, ln in enumerate(tag_lines)]
+        body.append(text(pad, h - 20, "VIEW REPO ↗", size=11, fill=t["amber"], family="mono",
+                         weight=700, ls=0.12))
+        label = f"{name}: {sub}. {desc} Built with {', '.join(tags)}."
+        out[f"project-{slug}"] = svg(w, h, body, label)
+    return out
+
+
+BUILDERS = [build_headers, build_links, build_status, build_stats, build_governor,
+            build_hero, build_about, build_frames, build_projects]
 
 
 def render_png(src, dst):

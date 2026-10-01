@@ -3,6 +3,7 @@
 Coordinates are display pixels (the README shows everything at 830 wide); `svg()` sets
 width/height at 2x so rasterisers and hi-dpi screens get full resolution.
 """
+import base64
 from html import escape
 
 from tokens import MIN_FONT, MONO, SANS, SCALE
@@ -107,6 +108,36 @@ def brackets(x, y, w, h, length, *, stroke, sw=1.5):
          f"M{fmt(x1)} {fmt(y1 - L)}V{fmt(y1)}H{fmt(x1 - L)}"
          f"M{fmt(x0 + L)} {fmt(y1)}H{fmt(x0)}V{fmt(y1 - L)}")
     return path(d, stroke=stroke, sw=sw, cap="square")
+
+
+def wrap(s, width, size, family="sans", weight=400):
+    """Greedy word wrap to `width` display px using the same estimate as `text_width`."""
+    lines, cur = [], ""
+    for word in s.split():
+        trial = f"{cur} {word}".strip()
+        if cur and text_width(trial, size, family, weight) > width:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = trial
+    return lines + [cur] if cur else lines
+
+
+def image(x, y, w, h, src, *, clip=None, opacity=None):
+    """A JPEG embedded as a data URI (SVGs in <img> cannot load external files), cropped
+    to fill the box like CSS `object-fit: cover`."""
+    data = base64.b64encode(src.read_bytes()).decode()
+    c = f"url(#{clip})" if clip else None
+    a = attrs(x=x, y=y, width=w, height=h, preserveAspectRatio="xMidYMid slice",
+              clip_path=c, opacity=opacity)
+    return f'<image {a} href="data:image/jpeg;base64,{data}"/>'
+
+
+def linear_gradient(gid, stops, *, x2=1, y2=0):
+    """Horizontal by default. `stops` is a list of (offset, colour, opacity)."""
+    st = "".join(f'<stop offset="{fmt(o)}" stop-color="{c}" stop-opacity="{fmt(a)}"/>'
+                 for o, c, a in stops)
+    return f'<linearGradient id="{gid}" x1="0" y1="0" x2="{fmt(x2)}" y2="{fmt(y2)}">{st}</linearGradient>'
 
 
 def svg(w, h, body, label, defs=""):

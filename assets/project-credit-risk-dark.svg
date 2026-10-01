@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 220" width="536" height="440" role="img" aria-label="Credit Risk Analyser: Default-risk modelling. End-to-end credit default risk pipeline: feature engineering on borrower and loan attributes, model comparison and evaluation. Built with scikit-learn, Pandas, Jupyter.">
+<title>Credit Risk Analyser: Default-risk modelling. End-to-end credit default risk pipeline: feature engineering on borrower and loan attributes, model comparison and evaluation. Built with scikit-learn, Pandas, Jupyter.</title>
+<rect x="0" y="0" width="268" height="220" fill="#14110E"/>
+<path d="M0.75 14.75V0.75H14.75M253.25 0.75H267.25V14.75M267.25 205.25V219.25H253.25M14.75 219.25H0.75V205.25" fill="none" stroke="#F0A040" stroke-width="1.5" stroke-linecap="square"/>
+<text x="18" y="38" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="16" font-weight="700" fill="#ECE4D8">Credit Risk Analyser</text>
+<text x="18" y="57" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="12" fill="#9B9080">Default-risk modelling</text>
+<text x="18" y="84" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="12.5" fill="#ECE4D8">End-to-end credit default risk pipeline:</text>
+<text x="18" y="101" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="12.5" fill="#ECE4D8">feature engineering on borrower and loan</text>
+<text x="18" y="118" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="12.5" fill="#ECE4D8">attributes, model comparison and</text>
+<text x="18" y="135" font-family="-apple-system,BlinkMacSystemFont,&#x27;Segoe UI&#x27;,&#x27;Noto Sans&#x27;,Helvetica,Arial,sans-serif" font-size="12.5" fill="#ECE4D8">evaluation.</text>
+<text x="18" y="170" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="11" fill="#9B9080">scikit-learn · Pandas · Jupyter</text>
+<text x="18" y="200" font-family="ui-monospace,SFMono-Regular,&#x27;SF Mono&#x27;,Menlo,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1.32" fill="#F0A040">VIEW REPO ↗</text>
+</svg>
