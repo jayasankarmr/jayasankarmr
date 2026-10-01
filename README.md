@@ -149,8 +149,8 @@ learning Terraform · Kubernetes (coursework and self-study)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr-07-activity-dark.svg" /><img src="assets/hdr-07-activity-light.svg" width="100%" alt="07 Activity" /></picture>
 
-<!-- assets/activity-*.svg is generated daily by .github/workflows/activity.yml. -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg" /><img src="assets/activity-light.svg" width="100%" alt="GitHub contributions over the last year, current and longest streak, and languages by bytes across my repositories" /></picture>
+<!-- Built daily by .github/workflows/activity.yml and published to the output branch. -->
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jayasankarmr/jayasankarmr/output/activity-dark.svg" /><img src="https://raw.githubusercontent.com/jayasankarmr/jayasankarmr/output/activity-light.svg" width="100%" alt="GitHub contributions over the last year, current and longest streak, and languages by bytes across my repositories" /></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/hdr-08-beyond-dark.svg" /><img src="assets/hdr-08-beyond-light.svg" width="100%" alt="08 Beyond code" /></picture>
 
