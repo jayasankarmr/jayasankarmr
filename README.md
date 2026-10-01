@@ -82,34 +82,30 @@ now  working toward AWS Solutions Architect – Associate (Dec 2026)
 <!--START_SECTION:credly-->
 <table>
 <tr>
-<td align="center" width="130">
-<a href="https://www.credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b">
-<img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" width="95" alt="AWS Certified Cloud Practitioner" />
-</a>
-</td>
-<td>
+<td width="50%" valign="top">
+<a href="https://www.credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b"><img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" width="72" alt="AWS Certified Cloud Practitioner" /></a>
 
-**AWS Certified Cloud Practitioner**
-`EARNED Jun 2026` · valid to Jun 2029 · Amazon Web Services
+**AWS Certified Cloud Practitioner**<br />
+<sub>Amazon Web Services</sub>
+
+`● EARNED Jun 2026 · valid to Jun 2029`
 
 [Verify on Credly →](https://www.credly.com/badges/7d2823e1-296d-4fbc-b71e-0c4e117b706b)
 
 </td>
-<td align="center" width="130">
-<img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" width="95" alt="AWS Certified Solutions Architect – Associate" />
-</td>
-<td>
+<td width="50%" valign="top">
+<img src="assets/badge-saa-gray.png" width="72" alt="AWS Certified Solutions Architect – Associate, in progress" />
 
-**AWS Certified Solutions Architect – Associate**
-`IN PROGRESS` · targeting Dec 2026
+**AWS Certified Solutions Architect – Associate**<br />
+<sub>Amazon Web Services</sub>
+
+`◌ IN PROGRESS · targeting Dec 2026`
 
 </td>
 </tr>
 </table>
 
-**Training badges** <sub>(10 · hover for names)</sub>
-
-<a href="https://www.credly.com/badges/80728662-f747-4dd4-aa2d-9a89366c8b36"><img src="https://images.credly.com/size/110x110/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/blob" width="52" alt="AWS Educate Introduction to Generative AI - Training Badge" title="AWS Educate Introduction to Generative AI - Training Badge" /></a> <a href="https://www.credly.com/badges/ad9d3712-4b46-4f90-a958-ea0389315d6d"><img src="https://images.credly.com/size/110x110/images/247efe36-9fa6-4209-ad56-0fd522283872/blob" width="52" alt="AWS Educate Machine Learning Foundations - Training Badge" title="AWS Educate Machine Learning Foundations - Training Badge" /></a> <a href="https://www.credly.com/badges/c5e59b6c-96f9-4910-828c-0e68e4575280"><img src="https://images.credly.com/size/110x110/images/25108813-2dd7-45f7-8158-65689b8526b5/blob" width="52" alt="AWS Educate Getting Started with Serverless - Training Badge" title="AWS Educate Getting Started with Serverless - Training Badge" /></a> <a href="https://www.credly.com/badges/26c76833-a4e0-4e68-83c2-8437cf4473d1"><img src="https://images.credly.com/size/110x110/images/4251ab91-6d67-47da-801c-855c0bbc6cc3/blob" width="52" alt="AWS Educate Getting Started with Cloud Ops - Training Badge" title="AWS Educate Getting Started with Cloud Ops - Training Badge" /></a> <a href="https://www.credly.com/badges/10f20ec4-271a-4059-a18a-494fbafef2e0"><img src="https://images.credly.com/size/110x110/images/a08cf90b-9838-4f6c-82bd-8db85fb89dd5/blob" width="52" alt="AWS Educate Getting Started with Databases - Training Badge" title="AWS Educate Getting Started with Databases - Training Badge" /></a> <a href="https://www.credly.com/badges/2e227766-3789-4585-85be-6590a511000c"><img src="https://images.credly.com/size/110x110/images/f5095707-7683-4886-940c-3e8e4a2085ca/blob" width="52" alt="AWS Educate Getting Started with Networking - Training Badge" title="AWS Educate Getting Started with Networking - Training Badge" /></a> <a href="https://www.credly.com/badges/dd615cc3-dfcf-406e-992e-8a87e651cbb4"><img src="https://images.credly.com/size/110x110/images/fc6fa322-80f4-45a5-9def-91e9bcfde837/blob" width="52" alt="AWS Educate Getting Started with Security - Training Badge" title="AWS Educate Getting Started with Security - Training Badge" /></a> <a href="https://www.credly.com/badges/7bf6bd1c-1ab8-465d-9cad-52c7dce28e17"><img src="https://images.credly.com/size/110x110/images/7b08cc0e-064b-407d-b70e-323509c3e474/blob" width="52" alt="AWS Educate Getting Started with Compute - Training Badge" title="AWS Educate Getting Started with Compute - Training Badge" /></a> <a href="https://www.credly.com/badges/24da4581-3fd6-47dd-895f-fb75b07d8d9d"><img src="https://images.credly.com/size/110x110/images/3b1b42e6-dfc2-492b-90df-8058096cb93d/blob" width="52" alt="AWS Educate Getting Started with Storage - Training Badge" title="AWS Educate Getting Started with Storage - Training Badge" /></a> <a href="https://www.credly.com/badges/b0393431-408d-4398-900b-c06c8135f38d"><img src="https://images.credly.com/size/110x110/images/e51a8579-188d-4363-8ed1-12ad164ef57b/blob" width="52" alt="AWS Educate Introduction to Cloud 101 - Training Badge" title="AWS Educate Introduction to Cloud 101 - Training Badge" /></a>
+**10 AWS Educate training badges** &nbsp; <a href="https://www.credly.com/badges/80728662-f747-4dd4-aa2d-9a89366c8b36"><img src="https://images.credly.com/size/110x110/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/blob" width="40" alt="AWS Educate Introduction to Generative AI - Training Badge" title="AWS Educate Introduction to Generative AI - Training Badge" /></a> <a href="https://www.credly.com/badges/ad9d3712-4b46-4f90-a958-ea0389315d6d"><img src="https://images.credly.com/size/110x110/images/247efe36-9fa6-4209-ad56-0fd522283872/blob" width="40" alt="AWS Educate Machine Learning Foundations - Training Badge" title="AWS Educate Machine Learning Foundations - Training Badge" /></a> <a href="https://www.credly.com/badges/c5e59b6c-96f9-4910-828c-0e68e4575280"><img src="https://images.credly.com/size/110x110/images/25108813-2dd7-45f7-8158-65689b8526b5/blob" width="40" alt="AWS Educate Getting Started with Serverless - Training Badge" title="AWS Educate Getting Started with Serverless - Training Badge" /></a> <a href="https://www.credly.com/badges/26c76833-a4e0-4e68-83c2-8437cf4473d1"><img src="https://images.credly.com/size/110x110/images/4251ab91-6d67-47da-801c-855c0bbc6cc3/blob" width="40" alt="AWS Educate Getting Started with Cloud Ops - Training Badge" title="AWS Educate Getting Started with Cloud Ops - Training Badge" /></a> <a href="https://www.credly.com/badges/10f20ec4-271a-4059-a18a-494fbafef2e0"><img src="https://images.credly.com/size/110x110/images/a08cf90b-9838-4f6c-82bd-8db85fb89dd5/blob" width="40" alt="AWS Educate Getting Started with Databases - Training Badge" title="AWS Educate Getting Started with Databases - Training Badge" /></a> <a href="https://www.credly.com/badges/2e227766-3789-4585-85be-6590a511000c"><img src="https://images.credly.com/size/110x110/images/f5095707-7683-4886-940c-3e8e4a2085ca/blob" width="40" alt="AWS Educate Getting Started with Networking - Training Badge" title="AWS Educate Getting Started with Networking - Training Badge" /></a> <a href="https://www.credly.com/badges/dd615cc3-dfcf-406e-992e-8a87e651cbb4"><img src="https://images.credly.com/size/110x110/images/fc6fa322-80f4-45a5-9def-91e9bcfde837/blob" width="40" alt="AWS Educate Getting Started with Security - Training Badge" title="AWS Educate Getting Started with Security - Training Badge" /></a> <a href="https://www.credly.com/badges/7bf6bd1c-1ab8-465d-9cad-52c7dce28e17"><img src="https://images.credly.com/size/110x110/images/7b08cc0e-064b-407d-b70e-323509c3e474/blob" width="40" alt="AWS Educate Getting Started with Compute - Training Badge" title="AWS Educate Getting Started with Compute - Training Badge" /></a> <a href="https://www.credly.com/badges/24da4581-3fd6-47dd-895f-fb75b07d8d9d"><img src="https://images.credly.com/size/110x110/images/3b1b42e6-dfc2-492b-90df-8058096cb93d/blob" width="40" alt="AWS Educate Getting Started with Storage - Training Badge" title="AWS Educate Getting Started with Storage - Training Badge" /></a> <a href="https://www.credly.com/badges/b0393431-408d-4398-900b-c06c8135f38d"><img src="https://images.credly.com/size/110x110/images/e51a8579-188d-4363-8ed1-12ad164ef57b/blob" width="40" alt="AWS Educate Introduction to Cloud 101 - Training Badge" title="AWS Educate Introduction to Cloud 101 - Training Badge" /></a>
 <!--END_SECTION:credly-->
 
 Also: **The Bits and Bytes of Computer Networking** · Google (Coursera) · [all badges on Credly →](https://www.credly.com/users/jayasankar-m-r.eede608c)

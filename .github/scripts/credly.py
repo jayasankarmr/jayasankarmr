@@ -21,7 +21,8 @@ IN_PROGRESS = [
         "name": "AWS Certified Solutions Architect – Associate",
         "match": "AWS Certified Solutions Architect - Associate",
         "issuer": "Amazon Web Services",
-        "image": "0e284c3f-5164-4b21-8660-0d84737941bc",
+        # Grayscale copy of the Credly badge, so the card reads as not yet earned.
+        "image": "assets/badge-saa-gray.png",
         "note": "targeting Dec 2026",
     },
 ]
@@ -57,27 +58,42 @@ def short_date(iso):
     return f"{['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][int(m) - 1]} {y}"
 
 
-def cert_cells(b):
+def cert_cell(b):
     t = b["badge_template"]
     url = f"https://www.credly.com/badges/{b['id']}"
     name = html.escape(t["name"])
-    valid = f"`EARNED {short_date(b['issued_at_date'])}`"
+    status = f"● EARNED {short_date(b['issued_at_date'])}"
     if b.get("expires_at_date"):
-        valid += f" · valid to {short_date(b['expires_at_date'])}"
+        status += f" · valid to {short_date(b['expires_at_date'])}"
     return (
-        f'<td align="center" width="130">\n<a href="{url}">\n'
-        f'<img src="{image(t["image_url"], 340)}" width="95" alt="{name}" />\n</a>\n</td>\n'
-        f"<td>\n\n**{name}**\n{valid} · {issuer(b)}\n\n[Verify on Credly →]({url})\n\n</td>"
+        f'<td width="50%" valign="top">\n'
+        f'<a href="{url}"><img src="{image(t["image_url"], 340)}" width="72" alt="{name}" /></a>\n\n'
+        f"**{name}**<br />\n<sub>{issuer(b)}</sub>\n\n`{status}`\n\n"
+        f"[Verify on Credly →]({url})\n\n</td>"
     )
 
 
-def planned_cells(p):
+def planned_cell(p):
     name = html.escape(p["name"])
     return (
-        f'<td align="center" width="130">\n'
-        f'<img src="{image(p["image"], 340)}" width="95" alt="{name}" />\n</td>\n'
-        f"<td>\n\n**{name}**\n`IN PROGRESS` · {p['note']}\n\n</td>"
+        f'<td width="50%" valign="top">\n'
+        f'<img src="{p["image"]}" width="72" alt="{name}, in progress" />\n\n'
+        f"**{name}**<br />\n<sub>{p['issuer']}</sub>\n\n`◌ IN PROGRESS · {p['note']}`\n\n</td>"
     )
+
+
+def training_label(names):
+    """"10 AWS Educate training badges": the words every badge name starts with, if any."""
+    words = [n.split() for n in names]
+    common = []
+    for group in zip(*words):
+        if len(set(group)) > 1:
+            break
+        common.append(group[0])
+    if len(names) == 1 or len(common) == len(words[0]):
+        common = []
+    noun = "training badge" if len(names) == 1 else "training badges"
+    return " ".join([str(len(names))] + common + [noun])
 
 
 def render(badges):
@@ -86,17 +102,18 @@ def render(badges):
     earned = {b["badge_template"]["name"].replace("–", "-").lower() for b in certs}
     planned = [p for p in IN_PROGRESS if p["match"].lower() not in earned]
 
-    cells = [cert_cells(b) for b in certs] + [planned_cells(p) for p in planned]
+    cells = [cert_cell(b) for b in certs] + [planned_cell(p) for p in planned]
     rows = [cells[i:i + CERTS_PER_ROW] for i in range(0, len(cells), CERTS_PER_ROW)]
     out = ["<table>"] + ["<tr>\n" + "\n".join(r) + "\n</tr>" for r in rows] + ["</table>"]
 
     if training:
         icons = " ".join(
             f'<a href="https://www.credly.com/badges/{b["id"]}"><img src="{image(b["badge_template"]["image_url"], 110)}" '
-            f'width="52" alt="{html.escape(b["badge_template"]["name"])}" title="{html.escape(b["badge_template"]["name"])}" /></a>'
+            f'width="40" alt="{html.escape(b["badge_template"]["name"])}" title="{html.escape(b["badge_template"]["name"])}" /></a>'
             for b in training
         )
-        out += ["", f"**Training badges** <sub>({len(training)} · hover for names)</sub>", "", icons]
+        label = training_label([b["badge_template"]["name"] for b in training])
+        out += ["", f"**{label}** &nbsp; {icons}"]
     return "\n".join(out)
 
 
